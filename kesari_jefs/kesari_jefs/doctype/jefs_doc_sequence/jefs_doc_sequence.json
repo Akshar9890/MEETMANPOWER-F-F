@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_type",
+  "year",
+  "last_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_type",
+   "label": "Document Type",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "year",
+   "label": "Year",
+   "fieldtype": "Int",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "last_no",
+   "label": "Last Sequence No",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "0"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Doc Sequence",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "hash"
+}

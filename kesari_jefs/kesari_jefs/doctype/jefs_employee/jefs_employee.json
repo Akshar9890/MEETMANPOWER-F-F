@@ -1,0 +1,599 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "full_name",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "father_or_husband_name",
+  "gender",
+  "dob",
+  "marital_status",
+  "blood_group",
+  "mobile",
+  "email",
+  "present_address",
+  "permanent_address",
+  "present_city",
+  "present_state",
+  "present_pin",
+  "aadhaar_encrypted",
+  "aadhaar_masked",
+  "pan_encrypted",
+  "pan_masked",
+  "uan",
+  "esic_ip_no",
+  "bank_account_encrypted",
+  "bank_account_masked",
+  "ifsc",
+  "bank_name",
+  "designation",
+  "department",
+  "skill_category",
+  "work_location",
+  "client_site",
+  "zone",
+  "employment_type",
+  "contract_end_date",
+  "date_of_joining",
+  "notice_period_days",
+  "date_of_exit",
+  "last_working_day",
+  "exit_reason",
+  "conduct",
+  "emergency_contact_name",
+  "emergency_contact_phone",
+  "police_station",
+  "id_proof_type",
+  "id_proof_encrypted",
+  "id_proof_masked",
+  "photo_path",
+  "status",
+  "source_batch",
+  "frappe_employee",
+  "nominees",
+  "history"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "label": "Employee Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "full_name",
+   "label": "Full Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "first_name",
+   "label": "First Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "middle_name",
+   "label": "Middle Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "last_name",
+   "label": "Last Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "father_or_husband_name",
+   "label": "Father's / Husband's Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "gender",
+   "label": "Gender",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "Male\nFemale\nOther",
+   "default": "Male"
+  },
+  {
+   "fieldname": "dob",
+   "label": "Date of Birth",
+   "fieldtype": "Date",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "marital_status",
+   "label": "Marital Status",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "Single\nMarried\nWidow\nWidower\nDivorcee",
+   "default": "Single"
+  },
+  {
+   "fieldname": "blood_group",
+   "label": "Blood Group",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "mobile",
+   "label": "Mobile",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "email",
+   "label": "Email",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "present_address",
+   "label": "Present Address",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "permanent_address",
+   "label": "Permanent Address",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "present_city",
+   "label": "City",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "present_state",
+   "label": "State",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Gujarat"
+  },
+  {
+   "fieldname": "present_pin",
+   "label": "PIN",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "aadhaar_encrypted",
+   "label": "Aadhaar (Encrypted)",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "aadhaar_masked",
+   "label": "Aadhaar (Masked)",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 1,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "pan_encrypted",
+   "label": "PAN (Encrypted)",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "pan_masked",
+   "label": "PAN (Masked)",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 1,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "uan",
+   "label": "UAN",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "esic_ip_no",
+   "label": "ESIC IP No",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "bank_account_encrypted",
+   "label": "Bank Account (Encrypted)",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "bank_account_masked",
+   "label": "Bank Account (Masked)",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 1,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "ifsc",
+   "label": "IFSC",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "bank_name",
+   "label": "Bank Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "designation",
+   "label": "Designation",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "department",
+   "label": "Department",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "skill_category",
+   "label": "Skill Category",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "Unskilled\nSemi-Skilled\nSkilled\nHighly Skilled",
+   "default": "Unskilled"
+  },
+  {
+   "fieldname": "work_location",
+   "label": "Work Location",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "client_site",
+   "label": "Client Site / Principal Employer",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "zone",
+   "label": "Zone",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Zone-A"
+  },
+  {
+   "fieldname": "employment_type",
+   "label": "Employment Type",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "options": "PERMANENT\nFIXED_TERM\nCONTRACT",
+   "default": "PERMANENT"
+  },
+  {
+   "fieldname": "contract_end_date",
+   "label": "Contract End Date",
+   "fieldtype": "Date",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "date_of_joining",
+   "label": "Date of Joining",
+   "fieldtype": "Date",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "notice_period_days",
+   "label": "Notice Period Days",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "30"
+  },
+  {
+   "fieldname": "date_of_exit",
+   "label": "Date of Exit",
+   "fieldtype": "Date",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "last_working_day",
+   "label": "Last Working Day",
+   "fieldtype": "Date",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "exit_reason",
+   "label": "Exit Reason",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "\nRESIGNATION\nRETIREMENT\nEND_OF_CONTRACT\nTERMINATION\nABSCONDING\nDEATH\nOTHER"
+  },
+  {
+   "fieldname": "conduct",
+   "label": "Conduct",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Good"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "label": "Emergency Contact Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "emergency_contact_phone",
+   "label": "Emergency Contact Phone",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "police_station",
+   "label": "Police Station",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "id_proof_type",
+   "label": "ID Proof Type",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "id_proof_encrypted",
+   "label": "ID Proof Number (Encrypted)",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "id_proof_masked",
+   "label": "ID Proof (Masked)",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 1,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "photo_path",
+   "label": "Photo Path",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "options": "ACTIVE\nEXITED",
+   "default": "ACTIVE"
+  },
+  {
+   "fieldname": "source_batch",
+   "label": "Source Batch",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "frappe_employee",
+   "label": "Frappe Employee",
+   "fieldtype": "Link",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "Employee"
+  },
+  {
+   "fieldname": "nominees",
+   "label": "Nominees",
+   "fieldtype": "Table",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "JEFS Employee Nominee"
+  },
+  {
+   "fieldname": "history",
+   "label": "Change History",
+   "fieldtype": "Table",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "JEFS Employee History"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "field:employee_code"
+}

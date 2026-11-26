@@ -1,0 +1,44 @@
+.jefs-desk-wrap { padding: 8px 4px 28px; max-width: 1320px; }
+.jefs-grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 16px; }
+.jefs-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.jefs-card { background: var(--card-bg, #fff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+.jefs-card h3, .jefs-card h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+.jefs-stat { font-size: 28px; font-weight: 700; margin: 4px 0; color: var(--heading-color, #0f172a); }
+.jefs-muted { color: var(--text-muted, #64748b); font-size: 12.5px; }
+.jefs-mono { font-family: var(--font-stack-monospace, monospace); font-size: 12px; }
+.jefs-pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; }
+.jefs-ok { background: #dcfce7; color: #166534; }
+.jefs-warn { background: #fef3c7; color: #92400e; }
+.jefs-err { background: #fee2e2; color: #991b1b; }
+.jefs-neutral { background: #e2e8f0; color: #334155; }
+.jefs-banner { padding: 10px 14px; border-radius: 8px; margin-bottom: 14px; font-size: 13px; }
+.jefs-banner.ok { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.jefs-banner.warn { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+.jefs-banner.err { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+.jefs-table-wrap { overflow-x: auto; }
+.jefs-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.jefs-table th, .jefs-table td { border-bottom: 1px solid var(--border-color, #e2e8f0); padding: 8px 10px; text-align: left; vertical-align: top; }
+.jefs-table th { background: var(--subtle-fg, #f8fafc); font-size: 11.5px; text-transform: uppercase; color: #475569; }
+.jefs-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.jefs-form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.jefs-tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--border-color, #e2e8f0); margin-bottom: 14px; flex-wrap: wrap; }
+.jefs-tab { border: 0; background: transparent; padding: 8px 12px; cursor: pointer; font-weight: 600; color: #64748b; border-bottom: 2px solid transparent; }
+.jefs-tab.active { color: #171717; border-bottom-color: #171717; }
+button.dock-item[aria-label="Flow"],
+.dock-item:has(use[href="#icon-flow"]),
+button:has(use[href="#icon-flow"]),
+.flow-launcher,
+.sidebar-flow,
+.es-menu__item:has(use[href="#icon-life-buoy"]),
+.help-video-link,
+[data-youtubeid],
+a[href*="youtube.com"],
+a[href*="youtu.be"],
+a[href*="support.frappe.io"],
+a[href*="frappe.io"],
+a[href*="frappecloud.com"],
+a[href*="docs.erpnext.com"],
+a[href*="frappehr.com"],
+.video-player[data-plyr-provider="youtube"] {
+  display: none !important;
+}

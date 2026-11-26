@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "label",
+  "line_type",
+  "amount_paise",
+  "amount_rupees",
+  "formula_text",
+  "is_manual",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "label": "Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "label",
+   "label": "Label",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "line_type",
+   "label": "Type",
+   "fieldtype": "Select",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "options": "EARNING\nDEDUCTION"
+  },
+  {
+   "fieldname": "amount_paise",
+   "label": "Amount (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "amount_rupees",
+   "label": "Amount (\u20b9)",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "formula_text",
+   "label": "Formula",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "is_manual",
+   "label": "Manual Line",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "note",
+   "label": "Note",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS FnF Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

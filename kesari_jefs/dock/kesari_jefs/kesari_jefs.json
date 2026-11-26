@@ -1,0 +1,24 @@
+{
+ "app": "kesari_jefs",
+ "creation": "2026-11-26 11:20:00.000000",
+ "docstatus": 0,
+ "doctype": "Dock",
+ "idx": 0,
+ "items": [
+  {
+   "added": 0,
+   "hidden": 0,
+   "icon": "contacts-cards-soft",
+   "link_to": "Kesari JEFS",
+   "link_type": "Sidebar",
+   "title": "Kesari JEFS"
+  }
+ ],
+ "modified": "2026-11-26 11:20:00.000000",
+ "modified_by": "Administrator",
+ "mount_on": "hrms",
+ "name": "kesari_jefs",
+ "owner": "Administrator",
+ "standard": 1,
+ "user": ""
+}

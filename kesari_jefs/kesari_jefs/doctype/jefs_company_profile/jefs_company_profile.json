@@ -1,0 +1,229 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "legal_name",
+  "short_name",
+  "address",
+  "phone",
+  "email",
+  "website",
+  "pf_code",
+  "esi_code",
+  "signatory_name",
+  "signatory_designation",
+  "signature_image_path",
+  "seal_image_path",
+  "logo_image_path",
+  "default_state",
+  "ref_prefix",
+  "gotenberg_url",
+  "working_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "legal_name",
+   "label": "Legal Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "KESARI MANPOWER SOLUTIONS"
+  },
+  {
+   "fieldname": "short_name",
+   "label": "Short Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Kesari Manpower"
+  },
+  {
+   "fieldname": "address",
+   "label": "Address",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "FLAT NO. 2, SHYAM NIWAS, 10, LAXMI COLONY, OPP. SANDALWOOD RESIDENCY, NR. URMI CROSS ROAD, AKOTA, VADODARA, 390020"
+  },
+  {
+   "fieldname": "phone",
+   "label": "Phone",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0265-3542931 / 9712898946"
+  },
+  {
+   "fieldname": "email",
+   "label": "Email",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "kesarimanpower@gmail.com"
+  },
+  {
+   "fieldname": "website",
+   "label": "Website",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "pf_code",
+   "label": "PF Code",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "GJ/VDR/000000"
+  },
+  {
+   "fieldname": "esi_code",
+   "label": "ESI Code",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "38000000000000000"
+  },
+  {
+   "fieldname": "signatory_name",
+   "label": "Signatory Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Meet Vyas"
+  },
+  {
+   "fieldname": "signatory_designation",
+   "label": "Signatory Designation",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Partner"
+  },
+  {
+   "fieldname": "signature_image_path",
+   "label": "Signature & Seal Image Path",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "seal_image_path",
+   "label": "Seal Image Path",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "logo_image_path",
+   "label": "Logo Image Path",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "default_state",
+   "label": "Default State",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "Gujarat"
+  },
+  {
+   "fieldname": "ref_prefix",
+   "label": "Reference Prefix",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "KM"
+  },
+  {
+   "fieldname": "gotenberg_url",
+   "label": "Gotenberg URL",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "http://gotenberg:3000"
+  },
+  {
+   "fieldname": "working_days",
+   "label": "Working Weekdays (0=Mon..6=Sun)",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0,1,2,3,4,5"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Company Profile",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

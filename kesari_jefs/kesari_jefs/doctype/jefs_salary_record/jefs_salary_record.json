@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "batch_id",
+  "period",
+  "basic_paise",
+  "da_paise",
+  "hra_paise",
+  "conveyance_paise",
+  "special_allowance_paise",
+  "gross_paise",
+  "pf_ee_paise",
+  "esi_ee_paise",
+  "pt_paise",
+  "net_paise",
+  "days_in_month",
+  "days_paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "label": "Employee Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "batch_id",
+   "label": "Batch ID",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "period",
+   "label": "Period (YYYY-MM)",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "basic_paise",
+   "label": "Basic (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "da_paise",
+   "label": "DA (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "hra_paise",
+   "label": "HRA (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "conveyance_paise",
+   "label": "Conveyance (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "special_allowance_paise",
+   "label": "Special Allowance (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "gross_paise",
+   "label": "Gross (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "pf_ee_paise",
+   "label": "PF EE (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "esi_ee_paise",
+   "label": "ESI EE (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "pt_paise",
+   "label": "PT (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "net_paise",
+   "label": "Net (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "days_in_month",
+   "label": "Days in Month",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "days_paid",
+   "label": "Days Paid",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Salary Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "hash"
+}

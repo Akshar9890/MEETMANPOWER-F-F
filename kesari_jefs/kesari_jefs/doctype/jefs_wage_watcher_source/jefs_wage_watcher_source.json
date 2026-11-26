@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_id",
+  "state",
+  "url",
+  "selector",
+  "keywords",
+  "last_hash",
+  "last_checked_at",
+  "last_status",
+  "latest_items_json"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_id",
+   "label": "Source ID",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "state",
+   "label": "State",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "url",
+   "label": "Notification Page URL",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "selector",
+   "label": "CSS Selector",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "a[href$='.pdf']"
+  },
+  {
+   "fieldname": "keywords",
+   "label": "Keywords",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "minimum wage,VDA,variable dearness"
+  },
+  {
+   "fieldname": "last_hash",
+   "label": "Last Hash",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "last_checked_at",
+   "label": "Last Checked At",
+   "fieldtype": "Datetime",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "last_status",
+   "label": "Last Status",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "latest_items_json",
+   "label": "Latest Snapshot JSON",
+   "fieldtype": "Long Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Wage Watcher Source",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "field:source_id"
+}

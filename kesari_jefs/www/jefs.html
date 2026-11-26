@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kesari Manpower — JEFS (Joining &amp; Exit Formality Software)</title>
+  <link rel="stylesheet" href="/assets/kesari_jefs/css/jefs.css" />
+</head>
+<body>
+  <div id="jefs-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge">KM</div>
+        <div>
+          <div class="brand-title">Kesari JEFS</div>
+          <div class="brand-sub">Phase 1 · HR &amp; F&amp;F</div>
+        </div>
+      </div>
+      <nav class="nav" id="sidebar-nav">
+        <button data-view="dashboard" class="nav-item active">Dashboard</button>
+        <button data-view="uploads" class="nav-item">Uploads (4 Feeds)</button>
+        <button data-view="employees" class="nav-item">Employees</button>
+        <button data-view="joining-kit" class="nav-item">Joining Kit &amp; Police</button>
+        <button data-view="fnf" class="nav-item">Exits &amp; F&amp;F</button>
+        <button data-view="certificates" class="nav-item">Service Certificates</button>
+        <button data-view="wage-revision" class="nav-item">Wage Revision</button>
+        <button data-view="documents" class="nav-item">Documents Register</button>
+        <button data-view="reports" class="nav-item">Reports</button>
+        <button data-view="settings" class="nav-item">Settings &amp; Audit</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="user-chip" id="user-chip">{{ current_user }}</div>
+        <a href="/desk" class="desk-link">← Frappe HR Desk</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="view-title">Dashboard</h1>
+          <div id="view-subtitle" class="muted">Kesari Manpower Solutions · Vadodara</div>
+        </div>
+        <div class="topbar-actions" id="topbar-actions"></div>
+      </header>
+      <div id="toast-box" class="toast hidden"></div>
+      <section id="view-content" class="content"></section>
+    </main>
+  </div>
+
+  <div id="modal-backdrop" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modal-title">Modal</h3>
+        <button id="modal-close" class="btn btn-sm">✕</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script>
+    window.JEFS_CSRF = "{{ csrf_token }}";
+    window.JEFS_USER = "{{ current_user }}";
+  </script>
+  <script src="/assets/kesari_jefs/js/jefs_app.js"></script>
+</body>
+</html>

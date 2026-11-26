@@ -1,0 +1,28 @@
+[project]
+name = "kesari_jefs"
+authors = [
+    { name = "Kesari Manpower / Meet Sir", email = "kesarimanpower@gmail.com" },
+]
+description = "Kesari Manpower Employee Joining & Exit Formality Software (JEFS) Phase 1 for Frappe HRMS"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "python-docx>=1.1.0",
+    "docxtpl>=0.18.0",
+    "qrcode>=7.4.2",
+    "openpyxl>=3.1.2",
+    "xlrd>=2.0.1",
+    "pypdf>=4.0.0",
+    "cryptography>=42.0.0",
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0"
+erpnext = ">=15.0.0"
+hrms = ">=15.0.0"

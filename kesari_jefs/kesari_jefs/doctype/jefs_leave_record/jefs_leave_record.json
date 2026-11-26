@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "batch_id",
+  "as_of_date",
+  "leave_type",
+  "opening",
+  "accrued",
+  "taken",
+  "encashed",
+  "balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "label": "Employee Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "batch_id",
+   "label": "Batch ID",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "as_of_date",
+   "label": "As-of Date",
+   "fieldtype": "Date",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "leave_type",
+   "label": "Leave Type",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "EL"
+  },
+  {
+   "fieldname": "opening",
+   "label": "Opening",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "accrued",
+   "label": "Accrued",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "taken",
+   "label": "Taken",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "encashed",
+   "label": "Encashed",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "balance",
+   "label": "EL Balance",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "0"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Leave Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "hash"
+}

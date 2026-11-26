@@ -1,0 +1,360 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "employee_name",
+  "version",
+  "status",
+  "exit_date",
+  "last_working_day",
+  "exit_reason",
+  "employment_type",
+  "client_site",
+  "service_years",
+  "service_months",
+  "service_days",
+  "counted_years",
+  "tenure_display",
+  "inputs_snapshot_json",
+  "total_earnings_paise",
+  "total_deductions_paise",
+  "net_payable_paise",
+  "net_payable_rupees",
+  "payment_due_date",
+  "is_overdue",
+  "prepared_by",
+  "submitted_by",
+  "submitted_at",
+  "approved_by",
+  "approved_at",
+  "remarks",
+  "warnings_json",
+  "errors_json",
+  "lines"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "label": "Employee Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "employee_name",
+   "label": "Employee Name",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "version",
+   "label": "Version",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "1"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "options": "DRAFT\nSUBMITTED\nAPPROVED\nCANCELLED\nREVISED",
+   "default": "DRAFT"
+  },
+  {
+   "fieldname": "exit_date",
+   "label": "Exit Date",
+   "fieldtype": "Date",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "last_working_day",
+   "label": "Last Working Day",
+   "fieldtype": "Date",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "exit_reason",
+   "label": "Exit Reason",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "employment_type",
+   "label": "Employment Type",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "client_site",
+   "label": "Client Site",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "service_years",
+   "label": "Service Years",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "service_months",
+   "label": "Service Months",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "service_days",
+   "label": "Service Days",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "counted_years",
+   "label": "Counted Gratuity Years",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "tenure_display",
+   "label": "Tenure",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "inputs_snapshot_json",
+   "label": "Inputs Snapshot JSON",
+   "fieldtype": "Long Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "total_earnings_paise",
+   "label": "Total Earnings (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "total_deductions_paise",
+   "label": "Total Deductions (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "net_payable_paise",
+   "label": "Net Payable (Paise)",
+   "fieldtype": "Int",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "net_payable_rupees",
+   "label": "Net Payable (\u20b9)",
+   "fieldtype": "Float",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "payment_due_date",
+   "label": "Payment Due Date",
+   "fieldtype": "Date",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "is_overdue",
+   "label": "Overdue",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "prepared_by",
+   "label": "Prepared By",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "submitted_by",
+   "label": "Submitted By",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "submitted_at",
+   "label": "Submitted At",
+   "fieldtype": "Datetime",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "approved_by",
+   "label": "Approved By",
+   "fieldtype": "Data",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "approved_at",
+   "label": "Approved At",
+   "fieldtype": "Datetime",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "remarks",
+   "label": "Remarks",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "warnings_json",
+   "label": "Warnings JSON",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "errors_json",
+   "label": "Errors JSON",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "lines",
+   "label": "Settlement Lines",
+   "fieldtype": "Table",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "options": "JEFS FnF Line"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS FnF Settlement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "JEFS-FNF-.YYYY.-.#####"
+}

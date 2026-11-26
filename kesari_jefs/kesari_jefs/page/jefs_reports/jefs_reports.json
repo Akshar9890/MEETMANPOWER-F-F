@@ -1,0 +1,48 @@
+{
+ "content": null,
+ "creation": "2026-11-26 11:22:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-11-26 11:31:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "jefs-reports",
+ "owner": "Administrator",
+ "page_name": "jefs-reports",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "JEFS Admin"
+  },
+  {
+   "role": "JEFS HR Onboarding"
+  },
+  {
+   "role": "JEFS Payroll Specialist"
+  },
+  {
+   "role": "JEFS Exit Desk"
+  },
+  {
+   "role": "JEFS Approver"
+  },
+  {
+   "role": "JEFS Auditor"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "JEFS Reports",
+ "shared_page": 1
+}

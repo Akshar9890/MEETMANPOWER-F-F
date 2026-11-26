@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "creation": "2026-11-26 10:50:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site_code",
+  "site_name",
+  "principal_employer_address",
+  "include_bonus",
+  "include_leave",
+  "include_gratuity",
+  "bonus_on_min_wage_days",
+  "leave_on_actual_wage_days",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_code",
+   "label": "Site Code",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "site_name",
+   "label": "Principal Employer Name",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0
+  },
+  {
+   "fieldname": "principal_employer_address",
+   "label": "Principal Employer Address",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  },
+  {
+   "fieldname": "include_bonus",
+   "label": "Include Bonus",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "1"
+  },
+  {
+   "fieldname": "include_leave",
+   "label": "Include Leave Encashment",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "1"
+  },
+  {
+   "fieldname": "include_gratuity",
+   "label": "Include Gratuity",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 1,
+   "unique": 0,
+   "default": "1"
+  },
+  {
+   "fieldname": "bonus_on_min_wage_days",
+   "label": "Bonus on Min Wage x Days",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "leave_on_actual_wage_days",
+   "label": "Leave on Actual Wage x Days",
+   "fieldtype": "Check",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0,
+   "default": "0"
+  },
+  {
+   "fieldname": "notes",
+   "label": "Notes",
+   "fieldtype": "Small Text",
+   "reqd": 0,
+   "read_only": 0,
+   "in_list_view": 0,
+   "unique": 0
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-26 10:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kesari JEFS",
+ "name": "JEFS Client Site Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "field:site_code"
+}
