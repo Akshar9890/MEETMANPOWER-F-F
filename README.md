@@ -1,4 +1,4 @@
-# Kesari Manpower JEFS (Frappe App)
+# Kesari Manpower 
 
 Employee Joining & Exit Formality Software (Phase 1) integrated with Frappe HRMS:
 - 4 Excel Uploads (Employee, Salary, Bonus, Leave) + Photo ZIP with column mapping & validation preview
